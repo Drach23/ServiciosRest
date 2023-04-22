@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PastelArte|Pedidos</title>
+    <!--enlaces de archivos de css y javascript personales-->
+    <link rel="stylesheet" href="./css/pedidos.css">
+    <script src="./js/registro.js"></script>
+</head>
+<body>
+<!--header donde incluimos el nav para desplazarnos entre paginas-->
+<header>
+    <h1>PastelArte</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">inicio</a></li>
+            <li><a href="./mostrarPedidos.html">ver pedidos</a></li>
+        </ul>
+    </nav>
+</header>
+<!--Formulario-->
+<form class="formulario" id="formulario">
+    <h4>Registrar un pedido</h4>
+    <input class="datos" type="text" name="nombre" id="inputNombre" placeholder="Ingresa tu nombre">
+    <input class="datos" type="number" name="telefono" id="inputTelefono" placeholder="Ingresa tu numero de telefono">
+    <input class="datos" type="email" name="email" id="inputEmail" placeholder="Ingresa tu correo electronico">
+    <select class="datos" name="selectorPastel" id="selectorPastel">
+        <option value="disabled" selected disabled hidden>Selecciona tu tipo de pastel</option>
+        <option value="Sencillo">Pastel sencillo sin decorado</option>
+        <option value=Decorado>pastel con decorado, frutas y relleno</option>
+        <option value="Personalizado">pastel con decorado personalizado</option>
+    </select>
+
+    <input  class="datos" type="number" name="costoPastel" id="costoPastel" placeholder="Ingresa el costo del pastel">
+
+    <button type="button" class="botones" onclick="registro()">añade tu pedido</button>
+</form>
+<!--seccion del footer solo para poner el slogan-->
+<footer>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 text-center py-3">
+                <p class="text-light"> EN PASTELARTE SIEMPRE ESTAREMOS EN TUS MAS DULCES MOMENTOS</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

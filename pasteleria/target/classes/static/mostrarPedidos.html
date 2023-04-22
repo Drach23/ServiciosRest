@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PastelArte|Mostrar pedidos</title>
+    <script src="./js/mostrarPedidos.js"></script>
+    <link rel="stylesheet" href="./css/mostrarPedidos.css">
+</head>
+<body>
+<!--header donde incluimos el nav para desplazarnos entre paginas-->
+<header>
+    <h1>PastelArte</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">inicio</a></li>
+            <li><a href="./pedidos.html">realiza tu pedido ahora</a></li>
+            <li><a href="./editarEliminar.html">Editar/Eliminar</a></li>
+
+        </ul>
+    </nav>
+</header>
+<!--generacion de la tabla-->
+<table id="pedidoTable">
+    <!--Encabezado de la tabla-->
+    <thead>
+    <th scope="col">Id</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Teléfono</th>
+    <th scope="col">Correo electrónico</th>
+    <th scope="col">Tipo de pastel</th>
+    <th scope="col">Costo de pastel</th>
+    </thead>
+    <!--Cuerpo de la tabla, en el cual se mostrarán los pedidos y es generado por javascript-->
+    <tbody id="pedidoTableBody">
+
+    </tbody>
+
+</table>
+<footer>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 text-center py-3">
+                <p class="text-light"> EN PASTELARTE SIEMPRE ESTAREMOS EN TUS MAS DULCES MOMENTOS</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

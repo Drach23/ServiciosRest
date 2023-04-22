@@ -1,0 +1,102 @@
+
+/*importacion de las fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Sacramento&display=swap');
+
+
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Estilos para la sección de introducción y para personalizar el carrusel de imagenes de bootstrap*/
+body{
+    text-align: center;
+}
+section {
+    margin: 50px;
+}
+
+ section h2 {
+     font-size: 7em;
+     margin-top: 3rem;
+     margin-bottom: 1rem;
+     color: #333;
+     font-family: 'Sacramento', cursive;
+}
+
+ section p {
+     font-size: 1.25rem;
+     line-height: 1.5;
+     margin-bottom: .5rem;
+     color: #555;
+     font-family: 'Mulish', sans-serif;
+}
+
+.carousel-item img {
+    height: 550px;
+    width: 300px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h5 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.carousel-caption p {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}

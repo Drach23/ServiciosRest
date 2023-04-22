@@ -1,0 +1,87 @@
+/*importacion de las fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Sacramento&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Estilos para la tabla */
+#pedidoTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#pedidoTable th,
+#pedidoTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#pedidoTable th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#pedidoTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#pedidoTableBody td {
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}

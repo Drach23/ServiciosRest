@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Hoja de estilos personal llamada index.css-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!--Importaciones del css y javascript de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <title>PastelArte|Inicio</title>
+</head>
+<body>
+<!--header donde incluimos el nav para desplazarnos entre paginas-->
+<header>
+    <h1>PastelArte</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">inicio</a></li>
+            <li><a href="./pedidos.html">realiza tu pedido ahora</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <section>
+        <!--texto de presentacion-->
+        <h2>PastelArte</h2>
+        <p>PastelArte te da la explosión de sabores que necesitas para consentirte.</p>
+        <p>Hacemos los más deliciosos pasteles desde hace 5 generaciones.</p>
+        <!--carrusel de fotos para exhibir los pasteles generado con bootstrap-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/pastel1.jpg" class="d-block w-100" alt="Pastel de chocolate">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pastel red velvet</h5> <!--Para modificar el nombre del producto-->
+                        <p>$250.00mx</p> <!--para modificar el precio del producto-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pastel2.jpg" class="d-block w-100" alt="Pastel de fresa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pastel de chocolate</h5>
+                        <p>$120.00mx</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pastel3.jpg" class="d-block w-100" alt="Pastel de vainilla">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pastel de chocolate con fruta</h5>
+                        <p>$150.00mx</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span><!--botones de bootstrap para regresar el carrusel-->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span><!--Botones de booststrap para adelantar el carrusel-->
+            </button>
+        </div>
+    </section>
+</section>
+<!--seccion del footer solo para poner el slogan-->
+<footer>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 text-center py-3">
+                <p class="text-light"> EN PASTELARTE SIEMPRE ESTAREMOS EN TUS MAS DULCES MOMENTOS</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

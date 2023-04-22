@@ -1,0 +1,107 @@
+/*importacion de las fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Sacramento&display=swap');
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Estilos para el formulario */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.formulario h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+.datos {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans-serif;
+}
+
+.selectorPastel {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans-serif;
+    color: #999;
+}
+
+/* Estilos para el botón */
+.botones {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+}
+
+.botones:hover {
+    background-color: #555;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}

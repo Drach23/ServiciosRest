@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PastelArte|Pedidos</title>
+    <!--enlaces de archivos de css y javascript personales-->
+    <link rel="stylesheet" href="./css/pedidos.css">
+    <script src="./js/editarEliminar.js"></script>
+</head>
+<body>
+<!--header donde incluimos el nav para desplazarnos entre paginas-->
+<header>
+    <h1>PastelArte</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">inicio</a></li>
+            <li><a href="./pedidos.html">Realiza tu pedido ahora</a></li>
+            <li><a href="./mostrarPedidos.html">ver pedidos</a></li>
+        </ul>
+    </nav>
+</header>
+<!--Formulario-->
+<form class="formulario" id="formulario">
+    <h4>MODIFICAR UN PEDIDO</h4>
+    <h4>buscar por id pedido a editar/eliminar</h4>
+    <input class="datos" type="text" name="busquedaID" id="inputId" placeholder="Ingresa la id a modificar">
+    <button type="button" class="botones" onclick="editarPedido()">Buscar</button>
+    <h4>Datos encontrados con la busqueda</h4>
+    <input class="datos" type="text" name="id" id="editarId" placeholder="Aqui aparecera el id" disabled>
+    <input class="datos" type="text" name="nombre" id="inputNombreEditar" placeholder="Aqui aparecera el nombre">
+    <input class="datos" type="number" name="telefono" id="inputTelefonoEditar" placeholder="Aqui aparecera el telefono">
+    <input class="datos" type="email" name="email" id="inputEmailEditar" placeholder="Aqui aparecera tu correo electronico">
+    <select class="datos" name="selectorPastel" id="selectorPastelEditar">
+        <option value="disabled" selected disabled hidden>Aqui Aparecera tu tipo de pastel</option>
+        <option value="Sencillo">Pastel sencillo sin decorado</option>
+        <option value=Decorado>pastel con decorado, frutas y relleno</option>
+        <option value="Personalizado">pastel con decorado personalizado</option>
+    </select>
+
+    <input  class="datos" type="number" name="costoPastel" id="costoPastelEditar" placeholder="Aqui aparecera el costo del pastel">
+
+    <button type="button" class="botones" onclick="guardarPedido()">Editar</button>
+    <button type="button" class="botones" onclick="eliminarPedido()">Eliminar </button>
+
+</form>
+<!--seccion del footer solo para poner el slogan-->
+<footer>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 text-center py-3">
+                <p class="text-light"> EN PASTELARTE SIEMPRE ESTAREMOS EN TUS MAS DULCES MOMENTOS</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
