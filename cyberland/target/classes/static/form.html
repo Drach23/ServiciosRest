@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="https://kit.fontawesome.com/10eaabc060.js" crossorigin="anonymous"></script>
+    <script src="Javascript/dateRegister.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./IMG/logo/logo2.png" alt="Logo de la marca">
+        </div>
+        <nav>
+            <ul class="navLinks">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./index.html#aboutUs">SOBRE NOSOTROS</a></li>
+                <li><a href="#">MAPA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="formRegister" id="form">
+        <h4>Registro de cita</h4>
+        <input class="controls" type="text" name="name" id="inputName" placeholder="Ingresa tu nombre">
+        <input class="controls" type="number" name="phone" id="inputPhone" placeholder="Ingresa tu numero de telefono">
+        <input class="controls" type="email" name="email" id="inputEmail" placeholder="Ingresa tu correo electronico">
+        <select class="controls" name="service" id="selectService">
+                <option value="disabled" selected disabled hidden>Selecciona tu tipo de cita</option>
+                <option value="repair">Reparacion de software/hardware</option>
+                <option value="maintenance">Mantenimiento</option>
+                <option value="warranty">Garantia</option>
+        </select>
+        <h4>Ingresa la fecha para tu cita</h4>
+        <input class="controls" type="date" name="date" id="inputDate" min="" >
+        <select class="controls" name="schedule" id="selectSchedule" >
+            <option value="disabled" selected disabled hidden>Selecciona tu horario</option>
+            <option value="10:00am">10:00 am</option>
+            <option value="12:00pm">12:00 pm</option>
+            <option value="02:00pm">02:00 pm</option>
+            <option value="04:00pm">04:00 pm</option>
+            <option value="06:00pm">06:00 pm</option>
+    </select>
+        <button type="button" class="buttons" onclick="dateRegister()"><h1>registra tu cita</h1></button>
+    </form>
+    <footer class="footer">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#"><img src="./IMG/logo/logo2.png" alt="Logo de la marca"></a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, unde.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS EN NUESTRAS REDES SOCIALES</h2>
+                <div class="socialMedia">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-tiktok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy;2023 <b>CYBERLAND | DRACH</b> - todos los derechos reservados</small>
+        </div>
+    </footer>
+</body>
+</html>

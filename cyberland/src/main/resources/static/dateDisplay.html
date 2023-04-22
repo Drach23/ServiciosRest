@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>dates</title>
+    <script src="./Javascript/getDates.js"></script>
+    <link rel="stylesheet" href="./css/dateDisplay.css">
+    <script src="https://kit.fontawesome.com/10eaabc060.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1>fechas registradas</h1>
+    <div class="" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <select id="searchField">
+            <option value="id">Id</option>
+            <option value="nombre">Nombre</option>
+            <option value="telefono">Teléfono</option>
+            <option value="email">Correo electrónico</option>
+            <option value="fecha">Fecha de cita</option>
+            <option value="horario">Horario</option>
+            <option value="servicio">Tipo de servicio</option>
+        </select>
+        <button id="searchButton" onclick="search()">Buscar</button>
+    </div>
+    <table id="dateTable">
+        <thead>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Correo electrónico</th>
+            <th scope="col">Fecha de cita</th>
+            <th scope="col">Horario</th>
+            <th scope="col">Tipo de servicio</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Borrar</th>
+        </thead>
+        <tbody id="dateTableBody">
+
+        </tbody>
+    </table>
+    <script src="./Javascript/dateTable.js"></script>
+</body>
+</html>

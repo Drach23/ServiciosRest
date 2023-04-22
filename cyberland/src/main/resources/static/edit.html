@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="https://kit.fontawesome.com/10eaabc060.js" crossorigin="anonymous"></script>
+    <script src="./Javascript/edit.js"></script>
+</head>
+<body>
+
+
+<form class="formRegister" id="form">
+    <h4>EDITAR CITA</h4>
+    <h4>buscar por cita por ID</h4>
+    <input class="controls" type="text" id="idSearch" placeholder="Ingresa id de Cita">
+    <button class="buttons" type="button" onclick="editDate()">Buscar</button>
+    <h4>RESULTADOS DE BUSQUEDA</h4>
+    <input class="controls" type="text" name="id" id="idEdit" readonly disabled>
+    <input class="controls" type="text" name="name" id="inputNameEdit" placeholder="Aqui aparecera el nombre">
+    <input class="controls" type="number" name="phone" id="inputPhoneEdit" placeholder="Aqui aparecera el telefono">
+    <input class="controls" type="email" name="email" id="inputEmailEdit" placeholder="Aqui aparecera el correo electronico">
+    <select class="controls" name="service" id="selectServiceEdit">
+        <option value="disabled" selected disabled hidden>Selecciona tu tipo de cita</option>
+        <option value="repair">Reparacion de software/hardware</option>
+        <option value="maintenance">Mantenimiento</option>
+        <option value="warranty">Garantia</option>
+    </select>
+    <h4>Ingresa la fecha para tu cita</h4>
+    <input class="controls" type="date" name="date" id="inputDateEdit" min="" >
+    <select class="controls" name="schedule" id="selectScheduleEdit" >
+        <option value="disabled" selected disabled hidden>Selecciona tu horario</option>
+        <option value="10:00am">10:00 am</option>
+        <option value="12:00pm">12:00 pm</option>
+        <option value="02:00pm">02:00 pm</option>
+        <option value="04:00pm">04:00 pm</option>
+        <option value="06:00pm">06:00 pm</option>
+    </select>
+    <button type="button" class="buttons" onclick="saveDate()"><h1>Guardar Cambios</h1></button>
+</form>
+</body>
+</html>
